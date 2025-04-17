@@ -11,10 +11,11 @@ function Hero() {
       }}
     >
       <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', fontWeight: '600' }}>
-        Naturally Clean. Truly Pure.
+        Bienestar Orgánico Desde Nuestro Hogar Hasta el Tuyo
       </h2>
       <p style={{ margin: '1rem 0', fontSize: '1.2rem', maxWidth: '800px', marginInline: 'auto' }}>
-        Our organic shampoo is crafted with botanical ingredients to give your hair the love it deserves.
+        En YOSANO, madre e hija crean productos naturales hechos a mano en un rancho familiar al norte de México. 
+        Creados con amor, cultivados con conciencia.
       </p>
       <a
         href="https://www.yosanoorganics.com/"
@@ -32,7 +33,7 @@ function Hero() {
           marginTop: '1.5rem',
         }}
       >
-        Shop Now
+        Comprar Ahora
       </a>
     </section>
   );
