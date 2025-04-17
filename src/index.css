@@ -1,68 +1,143 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* === Layout Utilities === */
+.section {
+  padding: 4rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.section-light {
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-body {
-  margin: 0;
+.section-dark {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.section-gray {
+  background-color: #f4f4f5;
+  color: #333;
+}
+
+.section-center {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* === Typography === */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: inherit;
+}
+
+.section-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  color: inherit;
+}
+
+/* === Feature Grid === */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === Feature Card === */
+.feature-card {
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+
+.feature-icon {
+  background-color: #bbf7d0;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 1rem auto;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+.feature-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0 0.5rem;
+}
+
+/* === Testimonial === */
+.testimonial {
+  margin-top: 4rem;
+  max-width: 800px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.testimonial-quote {
+  font-size: 2rem;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  margin-bottom: 1rem;
+  color: #111;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.testimonial-author {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* === Button === */
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3c9741;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1.25rem;
   }
-  a:hover {
-    color: #747bff;
+
+  .section-title {
+    font-size: 2rem;
   }
-  button {
-    background-color: #f9f9f9;
+
+  .section-text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
   }
 }
