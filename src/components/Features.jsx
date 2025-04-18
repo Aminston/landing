@@ -45,7 +45,7 @@ function Features() {
 
         <div className="testimonial">
           <p className="testimonial-quote">
-           “YOSANO no es solo una marca, es un ritual de bienestar que comienza en la tierra y termina en tu piel.”
+           “YOSANO es un ritual de bienestar que comienza en la tierra y termina en tu piel.”
           </p>
         </div>
       </div>
