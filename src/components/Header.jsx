@@ -1,10 +1,15 @@
 function Header() {
   return (
     <header className="header">
-      <h1 className="logo">Yosano</h1>
-      <nav className="nav">
-        <a href="#about" className="nav-link">About</a>
-      </nav>
+      <div className="header-content">
+        <a href="/" className="logo-link">
+          <img
+            src="/yosano-logo.png"
+            alt="Yosano Logo"
+            className="logo-img"
+          />
+        </a>
+      </div>
     </header>
   );
 }
