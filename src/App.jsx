@@ -1,8 +1,9 @@
 import Header from './components/Header';
-import Hero from './Components/Hero';
+import Hero from './components/Hero';
 import About from './components/About';
 import Features from './components/Features';
 import Contact from './components/Contact';
+
 
 function App() {
   return (
